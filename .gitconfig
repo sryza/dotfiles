@@ -1,6 +1,7 @@
 [alias]
 	# View the SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph
+    pl = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 	# View the current working tree status using the short format
 	s = status -s
 	# Show the diff between the latest commit and the current state
@@ -25,6 +26,10 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
+    hc = !"git log -n1 | head -1 | awk '{print $2}'"
+    rbm = "rebase origin/master"
+    rbmi = "rebase origin/master --interactive"
+    st = "status -uno"
 
 [apply]
 	# Detect whitespace errors when applying a patch

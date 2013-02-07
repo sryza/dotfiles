@@ -1,4 +1,33 @@
-# Mathias’s dotfiles
+# Uri's dotfiles
+
+Stolen from `mathiasbynens/dotfiles`.
+
+Files I have reviewed:
+* .osx changed to osx
+* .aliases
+* .bashrc
+* bootstrap.sh
+* .bash_prompt
+* .bash_profile
+* .brew changed to brew
+* .exports
+* .functions
+* .gitconfig
+* .gitattributes
+* .gitignore
+* .hgignore
+* .gvimrc deleted
+* .hushlogin
+* .inputrc
+* .screenrc
+* .vimrc
+* .wgetrc
+* .vim
+
+Installed Solarized colors for vim
+
+I want a keyboard shortcut to pop up a terminal and one to pop up a browser.  Get SizeUp.
+
 
 ## Installation
 

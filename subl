@@ -1,0 +1,9 @@
+cd ~/Library/Application\ Support/Sublime\ Text\ 2/
+
+mv ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Installed\ Packages.bak
+mv ~/Library/Application\ Support/Sublime\ Text\ 2/Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Packages.bak
+mv ~/Library/Application\ Support/Sublime\ Text\ 2/Pristine\ Packages ~/Library/Application\ Support/Sublime\ Text\ 2/Pristine\ Packages.bak
+
+ln -s ~/Dropbox/Sublime\ Text\ 2/Installed\ Packages
+ln -s ~/Dropbox/Sublime\ Text\ 2/Packages
+ln -s ~/Dropbox/Sublime\ Text\ 2/Pristine\ Packages

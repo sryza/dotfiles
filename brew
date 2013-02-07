@@ -19,30 +19,47 @@ brew install wget --enable-iri
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# brew install ringojs
+# brew install narwhal
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
-brew tap josegonzalez/homebrew-php
-brew install php54
+# brew tap josegonzalez/homebrew-php
+# brew install php54
 
 # These two formulae didn’t work well last time I tried them:
 #brew install homebrew/dupes/vim
 #brew install homebrew/dupes/screen
 
 # Install everything else
-brew install ack
+# brew install ack
 #brew install exiv2
 brew install git
-#brew install imagemagick
-brew install lynx
-brew install node
-brew install rename
-brew install rhino
+brew install mercurial
+brew install imagemagick
+# brew install lynx
+# brew install node
+# brew install rename
+# brew install rhino
 brew install tree
-brew install webkit2png
+# brew install webkit2png
+
+brew install tmux
+brew install readline
+brew install ec2-api-tools
+# brew install exonerate
+brew install gfortran
+brew install fftw
+brew install hmmer
+brew install jq
+brew install boost
+
+brew install python
+pip install --upgrade distribute
+pip install --upgrade pip
+
+brew install r
 
 # Remove outdated versions from the cellar
 brew cleanup
