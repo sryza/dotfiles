@@ -34,12 +34,6 @@ brew install bash-completion
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
@@ -89,6 +83,21 @@ brew install zopfli
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
+
+brew install tmux
+brew install readline
+brew install gfortran
+brew install fftw
+brew install jq
+brew install boost --c++11
+
+brew install python
+pip install --upgrade setuptools
+pip install --upgrade pip
+brew install python3
+pip3 install --upgrade pip
+
+brew install r
 
 # Remove outdated versions from the cellar.
 brew cleanup
