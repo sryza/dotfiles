@@ -31,6 +31,8 @@
     rbm = "rebase origin/master"
     rbmi = "rebase origin/master --interactive"
     st = "status -uno"
+    # git churn
+    churn = "!f() { git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | sort -g; }; f"
 
 [apply]
 	# Detect whitespace errors when applying a patch
