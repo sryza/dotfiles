@@ -1,0 +1,11 @@
+# homebrew
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+# updated gnu tools
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+# miniconda
+# export PATH="/Users/laserson/miniconda/bin:$PATH"
+
+export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
