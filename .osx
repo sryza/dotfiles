@@ -175,7 +175,7 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 ###############################################################################
 # Screen                                                                      #
@@ -393,15 +393,15 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulat
 # 10: Put display to sleep
 # 11: Launchpad
 # 12: Notification Center
-# Top left screen corner → Mission Control
-# defaults write com.apple.dock wvous-tl-corner -int 2
-# defaults write com.apple.dock wvous-tl-modifier -int 0
-# Top right screen corner → Desktop
-# defaults write com.apple.dock wvous-tr-corner -int 4
-# defaults write com.apple.dock wvous-tr-modifier -int 0
-# Bottom left screen corner → Start screen saver
-# defaults write com.apple.dock wvous-bl-corner -int 5
-# defaults write com.apple.dock wvous-bl-modifier -int 0
+# Bottom left screen corner → Dashboard
+defaults write com.apple.dock wvous-tl-corner -int 7
+defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top right screen corner → Show application windows
+defaults write com.apple.dock wvous-tr-corner -int 3
+defaults write com.apple.dock wvous-tr-modifier -int 0
+# Bottom right screen corner → Desktop
+defaults write com.apple.dock wvous-br-corner -int 6
+defaults write com.apple.dock wvous-br-modifier -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
@@ -732,7 +732,7 @@ defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Do
 defaults write org.m0k.transmission DownloadAsk -bool false
 
 # Trash original torrent files
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
+defaults write org.m0k.transmission DeleteOriginalTorrent -bool false
 
 # Hide the donate message
 defaults write org.m0k.transmission WarningDonate -bool false
