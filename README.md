@@ -7,6 +7,7 @@
 ### Other things to get (laserson)
 
 https://github.com/andreberg/Meslo-Font
+Palua
 
 
 ### Using Git and the bootstrap script
