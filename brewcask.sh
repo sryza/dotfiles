@@ -14,5 +14,5 @@ brew cask install evernote
 brew cask install firefox
 brew cask install mendeley-desktop
 brew cask install papers
-brew cask install rdio
+brew cask install spotify
 brew cask install seil
