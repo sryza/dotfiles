@@ -129,6 +129,8 @@ brew install xz
 # pip3 install -U pip
 # pip3 install -U setuptools
 brew install ruby
+
+brew tap homebrew/science
 brew install r
 
 # Remove outdated versions from the cellar.
