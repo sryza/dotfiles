@@ -1,6 +1,4 @@
-# Mathias’s dotfiles
-
-![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
+# Uri’s dotfiles
 
 ## Installation
 
@@ -78,21 +76,24 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
-### Sensible OS X defaults
-
-When setting up a new Mac, you may want to set some sensible OS X defaults:
-
-```bash
-./.osx
-```
 
 ### Install Homebrew formulae
+
+DO THIS BEFORE RUNNING THE .osx SCRIPT
 
 When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
 
 ```bash
 ./brew.sh
 ./brewcask.sh
+```
+
+### Sensible OS X defaults
+
+When setting up a new Mac, you may want to set some sensible OS X defaults:
+
+```bash
+./.osx
 ```
 
 ## Feedback
