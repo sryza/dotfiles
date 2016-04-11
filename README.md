@@ -1,5 +1,10 @@
 # Uri’s dotfiles
 
+## New computer protocol
+
+1. Install any updates on the machine (App Store)
+2. Install developer tools (Xcode) (App Store)
+
 ## Installation
 
 ### Other things to get (laserson)
