@@ -96,6 +96,16 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
+### Manual installs
+
+Symantec VIP Access Desktop
+
+
+### Things to add to launch on startup
+
+Activity Monitor
+Slack
+
 ## Feedback
 
 Suggestions/improvements
