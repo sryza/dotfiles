@@ -19,10 +19,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
 
 # Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+# sudo pmset -a standbydelay 86400
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+# sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 defaults write com.apple.universalaccess reduceTransparency -bool true
@@ -103,13 +103,13 @@ defaults write com.apple.helpviewer DevMode -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+# sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+# defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Disable Notification Center and remove the menu bar icon
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
@@ -210,7 +210,7 @@ defaults write com.apple.finder QuitMenuItem -bool true
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Set Desktop as the default location for new Finder windows
+# Set ~/ as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
@@ -289,7 +289,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Disable the warning before emptying the Trash
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+# defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Do Not Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool false
