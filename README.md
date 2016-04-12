@@ -4,14 +4,19 @@
 
 1. Install any updates on the machine (App Store)
 2. Install developer tools (Xcode) (App Store)
+3. Dnload and install Command Line Tools from
+   https://developer.apple.com/downloads/
+4. Set computer name (under Sharing in System Preferences)
+5. Install homebrew http://brew.sh/
+6. Create ~/.ssh (700) and transfer ssh keys if necessary. (You can scp the
+   files from one to the other.  Also transfer config if desired.)
+7. Checkout this repo into ~/dotfiles.  Set upstream as well.
+8. Follow directions in brew.sh
+9. Follow directions in brewcask.sh
+10. Follow directions in conda.sh
+11. Get Meslo font: https://github.com/andreberg/Meslo-Font
 
 ## Installation
-
-### Other things to get (laserson)
-
-https://github.com/andreberg/Meslo-Font
-Palua
-
 
 ### ssh agent
 

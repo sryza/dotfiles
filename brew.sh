@@ -37,10 +37,10 @@ brew install homebrew/dupes/screen
 brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+# brew tap bramstein/webfonttools
+# brew install sfnt2woff
+# brew install sfnt2woff-zopfli
+# brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
@@ -100,15 +100,15 @@ brew install readline
 brew install gfortran
 brew install fftw
 brew install jq
-brew install boost --c++11
+brew install boost --c++11  # LONG TIME
 brew install cmake
 brew install csshx
 brew install glib
 brew install iftop
 brew install libffi
-brew install llvm --with-clang --with-rtti --with-python
+brew install llvm --with-clang --with-rtti --with-python  # LONG TIME
 brew install mercurial
-brew install scala
+brew install scala  # needs Java first
 brew install sbt
 brew install zinc
 brew install snappy
