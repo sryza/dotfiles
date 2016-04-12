@@ -17,3 +17,4 @@ brew cask install mendeley-desktop
 brew cask install spotify
 brew cask install seil
 brew cask install intellij-idea
+brew cask install crashplan
