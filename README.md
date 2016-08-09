@@ -16,6 +16,7 @@
 10. Follow directions in conda.sh
 11. Get Meslo font: https://github.com/andreberg/Meslo-Font
 12. mkdir tmp
+13. install requirements file
 
 ## Installation
 

@@ -108,6 +108,7 @@ brew install iftop
 brew install libffi
 brew install llvm --with-clang --with-rtti --with-python  # LONG TIME
 brew install mercurial
+brew install maven
 brew install scala  # needs Java first
 brew install sbt
 brew install zinc
