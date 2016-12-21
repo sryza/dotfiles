@@ -8,15 +8,16 @@ function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" --exclude ".osx" \
         --exclude "brew.sh" --exclude "brewcask.sh" --exclude "bin/" \
-        --exclude "init/" \
+        --exclude "init/" --exclude ".sshconfig" \
         --exclude "requirements.txt" --exclude "conda.sh" -avh --no-perms . ~;
 	source ~/.bash_profile;
+    cp .sshconfig ~/.ssh/config
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt;
 else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+	read -p "This may overwrite existing files in your home directory and ~/.ssh/config. Are you sure? (y/n) " -n 1;
 	echo "";
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		doIt;

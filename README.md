@@ -28,6 +28,9 @@ To add private ssh key to Keychain:
 /usr/bin/ssh-add -K ~/.ssh/id_rsa
 ```
 
+Note the absolute path to use the OS X-supplied ssh-add which integrates with
+Keychain.
+
 ### Using Git and the bootstrap script
 
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
