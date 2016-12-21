@@ -29,7 +29,8 @@ To add private ssh key to Keychain:
 ```
 
 Note the absolute path to use the OS X-supplied ssh-add which integrates with
-Keychain.
+Keychain.  If you installed openssh with homebrew, make sure that it's not
+linked, or the homebrewed version will be run by default.
 
 ### Using Git and the bootstrap script
 
